@@ -1,0 +1,107 @@
+.skills {
+    padding: 1em;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: normal;
+    text-transform: uppercase;
+
+
+    & .skills-container {
+        transform: translatey(4em);
+
+        width: 60%;
+        margin: auto;
+        margin-bottom: 4em;
+        gap: 7em;
+
+        @media screen and (max-width:650px) {
+            width: 100%;
+        }
+
+        & h2 {
+            border: 0.32em solid black;
+            transform: translateY(5em);
+            padding: 1em;
+            text-align: center;
+            margin: auto;
+            max-width: 200px;
+            white-space: normal;
+            word-wrap: break-word;
+            margin-bottom: 3em;
+            letter-spacing: 5px;
+        }
+
+        & .grid-content {
+            width: 80%;
+            margin: auto;
+
+            transform: translatey(5em);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5em;
+
+
+
+
+            & .part1,
+            .part2,
+            .part3 {
+                row-gap: 2em;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                justify-content: center;
+
+                & .grid1,
+                .grid2,
+                .grid3 {
+                    /*  display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    column-gap: 10px;
+*/
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                    column-gap: 2px;
+                    width: 100%;
+
+                    padding: 0;
+
+                    & figure {
+                        margin: 0;
+                        padding: 0;
+
+                    }
+
+                    & figure {
+
+
+                        justify-self: center;
+                        padding: 1em;
+
+                        & img {
+
+                            width: 87px;
+                            height: 100px;
+                            object-fit: contain;
+                            filter: brightness(0.9) contrast(1.2) saturate(1.2);
+                        }
+
+                        & figcaption {
+                            font-family: 'Montserrat',
+                                sans-serif;
+                            font-weight: normal;
+                            text-align: center;
+                            letter-spacing: normal;
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+}

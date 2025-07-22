@@ -1,0 +1,262 @@
+@media screen and (min-width:650px) {
+    .hero {
+
+        width: 100%;
+        height: auto;
+        font-family: 'Raleway', sans-serif;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        gap: 5em;
+        justify-content: space-around;
+        align-items: center;
+        flex: 1;
+        flex-wrap: nowrap;
+
+
+        & .textual {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+            gap: 5em;
+            padding: 1em;
+
+            & .lines {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                align-items: center;
+                gap: 2em;
+                justify-content: center;
+                align-content: center;
+                flex-wrap: wrap;
+
+                & p {
+                    color: gray;
+                }
+
+                & .intro {
+                    color: black;
+                    font-weight: 600;
+
+                }
+
+                & h1 {
+                    font-weight: 999;
+                    font-size: 3em;
+
+                }
+            }
+
+            & .images {
+                display: flex;
+                flex-direction: row;
+                flex: 1;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: nowrap;
+                gap: 1em;
+
+                & .icons {
+                    width: 3em;
+                    height: 3em;
+                    box-shadow: 2px 2px 4px black;
+                    filter: drop-shadow(4px 4px 8px white);
+                    padding: 2px;
+                    object-fit: contain;
+                }
+            }
+        }
+
+
+        & .main-image {
+
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            align-items: flex-end;
+            padding-bottom: 0;
+            justify-content: space-evenly;
+
+
+
+
+
+            & .figmagirl {
+                transform: translatey(1.5em);
+
+                width: 450px;
+                filter: brightness(1) contrast(0.92) saturate(1);
+
+
+                inset: 0;
+                object-fit: cover;
+
+
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:650px) {
+
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 85dvh;
+        justify-content: flex-start;
+        overflow: hidden;
+        align-content: stretch;
+        position: relative;
+        margin-bottom: 0;
+
+        & .textual {
+            background: rgba(69, 64, 64, 0.8);
+            display: flex;
+            flex-direction: row;
+            clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 0);
+            justify-content: space-around;
+            align-items: stretch;
+            padding: 1em;
+            flex-wrap: wrap;
+
+            z-index: 12;
+
+            & .lines {
+                display: flex;
+                flex-direction: column;
+                color: rgb(210, 205, 205);
+                justify-content: flex-end;
+                padding-bottom: 2em;
+                row-gap: 1em;
+                flex-wrap: wrap;
+                white-space: normal;
+                word-wrap: break-word;
+                flex: 1;
+            }
+
+            & .images {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                gap: 1em;
+                padding: 1em;
+                flex-wrap: wrap;
+
+                & .icons {
+                    border: 2px solid white;
+                    background-color: white;
+                    border-radius: 100%;
+                    box-sizing: border-box;
+                    object-fit: contain;
+                    width: 10vw;
+                    height: 12vw;
+
+                }
+            }
+        }
+
+        & .main-image {
+
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            justify-content: center;
+            position: absolute;
+            inset: 0;
+
+
+            z-index: 9;
+
+
+            & .figmagirl {
+
+
+
+                object-fit: cover;
+            }
+
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
